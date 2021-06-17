@@ -1,0 +1,236 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family:Arial,Helvetica,san-serif;
+  margin:0;
+  background-color:#f4f4f4;
+}
+#main-header {
+  background-color: #000;
+  color:#fff;
+  position: fixed;
+  display:flex;
+  top:0.06em;
+  width:100%;
+  z-index:1;
+  box-sizing:border-box;
+}
+.logo {
+  height:50px;
+  border-radius:10%;
+  position:relative;
+  top:1em;
+}
+.logoHeading {
+  font-size:25px;
+}
+a{
+  color:yellow;
+  text-decoration:none;
+  padding:0.5em;
+  border-radius:5px;
+}
+a:hover{
+  color:blue;
+  background:#fff;
+  border:1px solid #ccc;
+}
+.headingTypography {
+  position:relative;
+  left:7rem;
+  font-size:27px;
+  /* color:yellow; */
+}
+.ul-list {
+  display:flex;
+  justify-content:space-between;
+  list-style:none;
+  position:relative;
+  left:10em;
+  top:1.3em;
+}
+.ul-list >li {
+  margin-right:2em;
+}
+
+.btnHeader {
+  position:relative;
+  left:15em;
+  height:6vh;
+  margin-right:2em;
+  width:10em;
+  top:1.5em;
+  border-radius:5px;
+
+}
+.container {
+  width:80%;
+  margin: auto;
+}
+.my-list2{
+  position: relative;
+  top:5em;
+  height: 20em;
+  margin-bottom: 10px;
+}
+.my-list2 >h1 {
+  text-align: center;
+}
+.my-list2 >li:nth-child(odd){
+  background-color: #fff;
+  color:#000;
+}
+.my-list2 >li:nth-child(even){
+  background-color: gray;
+  color:black;
+}
+.heading3 {
+  text-align: center;
+}
+.pTag{
+  position: relative;
+  left:3em;
+}
+#main-footer {
+background:#000;
+height:15em;
+display:grid:
+grid-template-columns:repeat(4,1fr);
+color:#fff;
+position:relative
+}
+#main-footer > h4 {
+  position:absolute;
+  top:2em;
+}
+#main-footer > p {
+  position:absolute;
+  top:10em;
+  left:40em;
+}
+.footerdiv {
+  position:absolute;
+  top:0px;
+  right:3em;
+}
+@media (max-width:960px) {
+  *{
+    box-sizing: border-box;
+  }
+  #main-header {
+    background-color: #000;
+    color:#fff;
+    position: fixed;
+    display:flex;
+    top:0.06em;
+    width:100%;
+    z-index:1;
+    box-sizing:border-box;
+    overflow: hidden;
+  }
+  .logo {
+    height:30px;
+    border-radius:10%;
+    position:relative;
+    top:1em;
+  }
+  .logoHeading {
+    font-size:20px;
+  }
+  a{
+    color:yellow;
+    text-decoration:none;
+    padding:0.2em;
+    border-radius:5px;
+  }
+  a:hover{
+    color:blue;
+    background:#fff;
+    border:1px solid #ccc;
+  }
+  .headingTypography {
+    position:relative;
+    left:2rem;
+    font-size:12px;
+
+  }
+  .ul-list {
+    display:flex;
+    justify-content:space-between;
+    list-style:none;
+    position:relative;
+    left:0.1em;
+    top:0.3em;
+  }
+  .ul-list >li {
+    margin-right:1em;
+  }
+
+  .btnHeader {
+    position:relative;
+    left:0.1em;
+    height:5vh;
+    margin-right:0.2em;
+    width:7em;
+    top:1em;
+    border-radius:5px;
+  }
+  .btnHeader:hover{
+    background: #ccc;
+    color:blue;
+  }
+  #main-footer > p {
+    position:absolute;
+    top:10em;
+    left:15em;
+  }
+}
+@media (max-width:600px) {
+  .my-form {
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: 3em;
+    position: relative;
+    left:-8em;
+  }
+  .btnSubmit {
+    height: 3em;
+    width: 30%;
+    position:absolute;
+    top:18em;
+    left:56%;
+  }
+  #main-header {
+    background-color: #000;
+    color:#fff;
+    height: 5em;
+    position: fixed;
+    display:flex;
+    top:0.06em;
+    width:100%;
+    z-index:1;
+    box-sizing:border-box;
+  }
+  .btnHeader {
+    position:relative;
+    left:-10em;
+    height:6vh;
+    margin-right:1em;
+    width:10em;
+    top:3em;
+    border-radius:5px;
+  }
+
+
+  .btnHeader:hover{
+    background: #ccc;
+    color:blue;
+  }
+  #main-footer > p {
+    position:absolute;
+    top:10em;
+    left:10em;
+  }
+
+}
